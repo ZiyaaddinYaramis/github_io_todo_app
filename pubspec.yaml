@@ -1,0 +1,39 @@
+name: todo_app
+description: "A new Flutter project."
+publish_to: "none" # Bu satır, paketin pub.dev'e yüklenmesini engeller
+
+version: 1.0.0+1 # Uygulamanın versiyon numarası
+
+environment:
+  sdk: ">=3.5.4 <4.0.0" # Flutter SDK sürüm gereksinimi
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.7.0 # Firebase altyapısı için gerekli temel paket
+  firebase_auth: ^5.3.2 # Kullanıcı kimlik doğrulaması (Authentication) için gerekli Firebase paketi
+  cloud_firestore: ^5.4.5 # Firebase veritabanı (Firestore) kullanımı için gerekli paket
+  flutter_local_notifications: ^9.0.0+1 # Görev hatırlatıcı bildirimler için bildirim paketi
+  intl: ^0.19.0 # Tarih, saat ve dil çevirileri gibi uluslararasılaştırma işlemleri için gerekli paket
+  flutter_localizations: # Çok dilli destek için kullanılan Flutter'ın yerelleştirme paketi
+    sdk: flutter
+  cupertino_icons: ^1.0.8 # iOS stili ikonlar için kullanılan paket
+  shared_preferences: ^2.0.13 # Kullanıcının dil tercihlerini saklamak için kullanılan paket
+  flutter_dotenv: ^5.0.2 # En son sürümü kontrol edin ve ekleyin (silinebilir)
+  provider: ^6.0.5 # State yönetimi için kullanılan paket (silinebilir)
+
+dev_dependencies:
+  intl_utils: ^2.8.7 # Çeviri dosyalarını oluşturmak için kullanılan paket
+  flutter_test:
+    sdk: flutter # Flutter testler için temel test paketi
+  flutter_lints: ^4.0.0 # Kod yazarken en iyi uygulamaları öneren linter kuralları
+
+flutter:
+  uses-material-design: true # Material Design ikonlarının kullanılmasını sağlar
+  assets:
+    - lib/l10n/
+
+flutter_intl:
+  enabled: true
+  arb_dir: lib/l10n
+  output_dir: lib/generated
