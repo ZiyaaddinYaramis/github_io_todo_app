@@ -69,21 +69,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-
-
-
-
-/* 
-!Açıklamalar01:
-
-setLocale Fonksiyonu:
-
-  *Uygulamanın dilini değiştirmek için kullanılır.
-  *Dışarıdan (başka widget'lerden) bu fonksiyon çağrılarak dil değiştirilebilir.
-
-  *Parametreler:
-    !BuildContext context: Hangi widget ağacında çalıştığını anlamak için kullanılır.
-    !Locale newLocale: Yeni dil bilgisi. Örneğin, Locale('en') (İngilizce) veya Locale('tr') (Türkçe).
-
- */

@@ -230,20 +230,20 @@ class S {
     );
   }
 
-  /// `Enter Email`
+  /// `Enter your email`
   String get enterEmail {
     return Intl.message(
-      'Enter Email',
+      'Enter your email',
       name: 'enterEmail',
       desc: '',
       args: [],
     );
   }
 
-  /// `Password`
+  /// `Enter your password`
   String get password {
     return Intl.message(
-      'Password',
+      'Enter your password',
       name: 'password',
       desc: '',
       args: [],
@@ -280,21 +280,61 @@ class S {
     );
   }
 
-  /// `Password reset email sent.`
+  /// `Fields cannot be empty`
+  String get fieldsCannotBeEmpty {
+    return Intl.message(
+      'Fields cannot be empty',
+      name: 'fieldsCannotBeEmpty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid email format`
+  String get invalidEmailFormat {
+    return Intl.message(
+      'Invalid email format',
+      name: 'invalidEmailFormat',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password reset email sent successfully.`
   String get passwordResetEmailSent {
     return Intl.message(
-      'Password reset email sent.',
+      'Password reset email sent successfully.',
       name: 'passwordResetEmailSent',
       desc: '',
       args: [],
     );
   }
 
-  /// `Please enter your email to reset password.`
+  /// `Please enter your email to reset your password.`
   String get enterYourEmailToResetPassword {
     return Intl.message(
-      'Please enter your email to reset password.',
+      'Please enter your email to reset your password.',
       name: 'enterYourEmailToResetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must be at least 6 characters long.`
+  String get passwordTooShort {
+    return Intl.message(
+      'Password must be at least 6 characters long.',
+      name: 'passwordTooShort',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OK`
+  String get ok {
+    return Intl.message(
+      'OK',
+      name: 'ok',
       desc: '',
       args: [],
     );
@@ -325,6 +365,126 @@ class S {
     return Intl.message(
       'Task Reminder',
       name: 'reminderTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No user found with this email.`
+  String get userNotFound {
+    return Intl.message(
+      'No user found with this email.',
+      name: 'userNotFound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incorrect password. Please try again.`
+  String get wrongPassword {
+    return Intl.message(
+      'Incorrect password. Please try again.',
+      name: 'wrongPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This account has been disabled. Please contact support.`
+  String get userDisabled {
+    return Intl.message(
+      'This account has been disabled. Please contact support.',
+      name: 'userDisabled',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Task name cannot be empty!`
+  String get taskNameCannotBeEmpty {
+    return Intl.message(
+      'Task name cannot be empty!',
+      name: 'taskNameCannotBeEmpty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to delete this task?`
+  String get deleteTaskConfirmation {
+    return Intl.message(
+      'Are you sure you want to delete this task?',
+      name: 'deleteTaskConfirmation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message(
+      'Delete',
+      name: 'delete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete Task`
+  String get deleteTask {
+    return Intl.message(
+      'Delete Task',
+      name: 'deleteTask',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Task`
+  String get editTask {
+    return Intl.message(
+      'Edit Task',
+      name: 'editTask',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add New Task`
+  String get addNewTask {
+    return Intl.message(
+      'Add New Task',
+      name: 'addNewTask',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No user is logged in`
+  String get noUserLoggedIn {
+    return Intl.message(
+      'No user is logged in',
+      name: 'noUserLoggedIn',
       desc: '',
       args: [],
     );

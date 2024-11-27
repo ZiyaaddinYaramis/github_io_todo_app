@@ -21,6 +21,8 @@ dependencies:
   shared_preferences: ^2.0.13 # Kullanıcının dil tercihlerini saklamak için kullanılan paket
   flutter_dotenv: ^5.0.2 # En son sürümü kontrol edin ve ekleyin (silinebilir)
   provider: ^6.0.5 # State yönetimi için kullanılan paket (silinebilir)
+  flag: ^6.0.0 # Bayrak ikonları için kullanılan paket (silinebilir)
+  flutter_svg: ^1.1.6 # SVG dosyalarını kullanmak için kullanılan paket (silinebilir)
 
 dev_dependencies:
   intl_utils: ^2.8.7 # Çeviri dosyalarını oluşturmak için kullanılan paket
@@ -32,8 +34,10 @@ flutter:
   uses-material-design: true # Material Design ikonlarının kullanılmasını sağlar
   assets:
     - lib/l10n/
+  generate: true # Yerelleştirme kodlarının otomatik oluşturulması için gerekli ayar
 
 flutter_intl:
   enabled: true
-  arb_dir: lib/l10n
-  output_dir: lib/generated
+  arb_dir: lib/l10n # .arb dosyalarının bulunduğu dizin
+  output_dir: lib/generated # Çıktı dosyalarının oluşturulacağı dizin
+
